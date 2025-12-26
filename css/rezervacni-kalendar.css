@@ -142,9 +142,9 @@ button.reserved {
   font-size: 14px;
 }
 
-.modal input:focus {
-  outline: none;
-  border-color: rgb(107, 73, 9);
+.modal {
+  background: white;
+  color: #222;
 }
 
 .modal h3 {
@@ -152,8 +152,6 @@ button.reserved {
   font-size: 22px;
   margin-bottom: 18px;
   letter-spacing: 1px;
-   opacity: 1 !important;
-  visibility: visible !important;
 }
 
 
