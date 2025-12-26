@@ -156,6 +156,8 @@ button.reserved {
   font-size: 22px;
   margin-bottom: 18px;
   letter-spacing: 1px;
+   opacity: 1 !important;
+  visibility: visible !important;
 }
 
 
