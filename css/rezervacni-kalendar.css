@@ -114,11 +114,7 @@ button.reserved {
   animation: fadeIn 0.3s ease;
 }
 
-.modal h3 {
-  margin: 0 0 12px;
-  text-align: center;
-  font-size: 20px;
-}
+
 
 .info {
   background: #f4f4f4;
