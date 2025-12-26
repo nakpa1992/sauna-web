@@ -151,6 +151,14 @@ button.reserved {
   border-color: rgb(107, 73, 9);
 }
 
+.modal h3 {
+  color: #6b4909;
+  font-size: 22px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+
 /* =========================
    TLAČÍTKA VE FORMULÁŘI
 ========================= */
