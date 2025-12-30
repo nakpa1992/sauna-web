@@ -188,13 +188,10 @@ nav ul li a:focus {
 }
 
 /* mobil */
-/* =========================
-   MOBILNÍ MENU
-========================= */
 @media (max-width: 768px) {
 
   nav {
-    position: relative;      /* ⬅️ ZRUŠÍ FIXNÍ POZICI */
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -206,7 +203,7 @@ nav ul li a:focus {
   }
 
   nav ul {
-    display: flex;           /* ⬅️ VODOROVNĚ */
+    display: flex;
     gap: 8px;
     justify-content: center;
   }
@@ -220,13 +217,6 @@ nav ul li a:focus {
     font-size: 14px;
   }
 
-}
-
-/* =========================
-   MOBIL – ODSAZENÍ OBSAHU POD MENU
-========================= */
-@media (max-width: 768px) {
-
   body {
     padding-top: 20px;
   }
@@ -235,7 +225,13 @@ nav ul li a:focus {
     padding-top: 20px;
   }
 
+  main,
+  article {
+    margin-left: 0;
+  }
+
 }
+
 
 /* ===== HERO – PODSTRÁNKY ===== */
 .hero-small {
