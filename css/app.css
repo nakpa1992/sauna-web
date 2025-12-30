@@ -188,15 +188,38 @@ nav ul li a:focus {
 }
 
 /* mobil */
+/* =========================
+   MOBILNÍ MENU
+========================= */
 @media (max-width: 768px) {
-  .hero {
-    min-height: 90vh;
+
+  nav {
+    position: relative;      /* ⬅️ ZRUŠÍ FIXNÍ POZICI */
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto 20px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.98);
   }
 
-  .hero-box {
-    margin: 0 16px;
-    padding: 36px 24px;
+  nav ul {
+    display: flex;           /* ⬅️ VODOROVNĚ */
+    gap: 8px;
+    justify-content: center;
   }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
 }
 
 /* ===== HERO – PODSTRÁNKY ===== */

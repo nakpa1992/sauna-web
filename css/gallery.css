@@ -52,3 +52,33 @@
 
 #lightbox-prev { left: 30px; }
 #lightbox-next { right: 30px; }
+
+
+/* ===== GALERIE – POZADÍ ===== */
+.gallery-hero {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+    url("../images/sauna.jpg") center / cover no-repeat;
+  padding: 80px 20px 80px;
+}
+
+.gallery-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-content h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.gallery-content h3 {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+}
