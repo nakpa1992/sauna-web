@@ -222,6 +222,21 @@ nav ul li a:focus {
 
 }
 
+/* =========================
+   MOBIL – ODSAZENÍ OBSAHU POD MENU
+========================= */
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 20px;
+  }
+
+  .container {
+    padding-top: 20px;
+  }
+
+}
+
 /* ===== HERO – PODSTRÁNKY ===== */
 .hero-small {
   min-height: 40vh;
