@@ -30,34 +30,51 @@
 }
 
 /* TABULKA */
+/* TABULKA */
 table.cenik {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;        /* ⬅️ DŮLEŽITÉ */
+  border-spacing: 0;                /* ⬅️ DŮLEŽITÉ */
   background-color: rgba(30, 30, 30, 0.95);
   color: rgb(240, 240, 240);
   border: 2px solid rgb(107, 73, 9);
+  border-radius: 14px;              /* ⬅️ ZAOBLENÍ */
+  overflow: hidden;                 /* ⬅️ SCHOVÁ ROHY */
+  box-shadow: 0 0 25px rgba(255,165,0,.15);
 }
+
 
 table.cenik th,
 table.cenik td {
-  padding: 14px 18px;
-  border: 1px solid rgb(90, 90, 90);
+  padding: 16px 20px;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   text-align: center;
 }
 
+
 table.cenik th {
-  background-color: rgb(107, 73, 9);
+  background: linear-gradient(135deg, rgb(107,73,9), rgb(150,100,20));
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+table.cenik th:first-child {
+  border-top-left-radius: 12px;
+}
+
+table.cenik th:last-child {
+  border-top-right-radius: 12px;
+}
+
 table.cenik tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.04);
 }
 
 table.cenik tr:hover {
-  background-color: rgba(255, 165, 0, 0.12);
+  background-color: rgba(255, 165, 0, 0.15);
+  transition: background-color 0.25s ease;
 }
 
 /* MOBIL */
