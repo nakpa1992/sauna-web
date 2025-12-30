@@ -4,19 +4,13 @@
   <meta charset="UTF-8">
   <title>Jak to všechno vznikalo</title>
 
-  <!-- společné styly -->
   <link rel="stylesheet" href="./css/app.css">
-
   <link rel="stylesheet" href="./css/gallery.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
 
-  
-  <!-- MENU -->
-<nav class="animate__animated animate__fadeInLeft">
+<nav class="main-nav animate__animated animate__fadeInLeft">
   <ul>
     <li><a href="./index.html">Domů</a></li>
     <li><a href="./cenik.html">Ceník</a></li>
@@ -24,24 +18,20 @@
   </ul>
 </nav>
 
-<!-- OBSAH -->
 <section class="gallery-hero">
   <div class="gallery-content">
-  <h2>Jak to všechno vznikalo</h2>
+    <h2>Jak to všechno vznikalo</h2>
+    <h3>
+      Saunu jsme stavěli přesně 4 roky a 26 dní od prvního kopnutí do prvního zatopení…
+    </h3>
 
-  <h3>
-    Saunu jsme stavěli přesně 4 roky a 26 dní od prvního kopnutí do prvního zatopení…
-  </h3>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
 
-  <!-- GALERIE -->
-  <div class="gallery" id="gallery"></div>
-
-</div>
-
-<!-- LIGHTBOX -->
 <div id="lightbox" class="hidden">
   <span id="lightbox-prev">&#10094;</span>
-  <img id="lightbox-img" src="">
+  <img id="lightbox-img">
   <span id="lightbox-next">&#10095;</span>
 </div>
 

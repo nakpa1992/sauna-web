@@ -5,7 +5,7 @@ body
 }
 
 h2 {
-  font-family: 'Montserrat', Arial, sans-serif;
+  
   font-size: 32px;
   color: rgb(249, 249, 249);
   margin-bottom: 20px;
@@ -21,7 +21,7 @@ table.cenik {
     border-collapse: collapse;
     background-color: rgba(30, 30, 30, 0.95);
     color: rgb(240, 240, 240);
-    font-family: 'Montserrat', Arial, sans-serif;
+    
     border: 2px solid rgb(107, 73, 9);
     box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
 }
@@ -52,14 +52,30 @@ table.cenik tr:hover {
 /* ===== CENÍK HERO ===== */
 .hero-cenik {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 120px 20px 60px;
+  background:
+    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.6)),
+    url("../images/sauna.jpg") center / cover no-repeat;
+
+   display: flex;
+  justify-content: center;
+  align-items: flex-start;   /* ⬅️ DŮLEŽITÉ */
+  padding-top: 120px;        /* ⬅️ výška pod menu */
+  padding-bottom: 60px;
 }
 
 
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px 50px;
+  border-radius: 18px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.hero-overlay h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
 
 
 nav {
@@ -72,7 +88,6 @@ nav {
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
     padding: 10px 5px;
-    font-family: 'Montserrat', Arial, sans-serif;
     z-index: 1000;
 }
 

@@ -1,15 +1,13 @@
 
-main, article {
-
-    margin-left: 230px;
+html {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
-
 
 
 /* Celkový styl */
 body {
     
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   
     color: white;
     background-color: #000;
     text-align: center;
@@ -23,7 +21,7 @@ h1, h2, h3 {
 }
 
 h1 {
-   font-family: 'Montserrat', Arial, sans-serif;
+  
   font-size: 32px;
   color: rgb(249, 249, 249);
   margin-bottom: 20px;
@@ -32,7 +30,7 @@ h1 {
 }
 
 h2 {
-      font-family: 'Montserrat', Arial, sans-serif;
+      
   font-size: 32px;
   color: rgb(249, 249, 249);
   margin-bottom: 20px;
@@ -41,7 +39,7 @@ h2 {
 }
 
 h3{
-      font-family: 'Montserrat', Arial, sans-serif;
+      
   font-size: 16px;
   color: rgb(249, 249, 249);
   margin-bottom: 20px;
@@ -93,48 +91,50 @@ ol .highlighted {
     color: rgb(163, 161, 148);
 }
 
-/* Menu */
-nav {
-    position: fixed;
-    top: 45px;
-    left: 20px;
-    width: 120px;
-    background-color: rgba(30, 30, 30, 0.95);
-    border: 2px solid rgb(107, 73, 9);
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
-    padding: 10px 5px;
-    font-family: 'Montserrat', Arial, sans-serif;
-    z-index: 1000;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 8px 0;
+ /* =========================
+   HLAVNÍ MENU
+========================= */
+/* =========================
+   HLAVNÍ MENU – DESKTOP
+========================= */
+.main-nav {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  width: 120px;
+  background-color: rgba(30, 30, 30, 0.95);
+  border: 2px solid rgb(107, 73, 9);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.2);
+  padding: 10px 5px;
+  z-index: 1000;
 }
 
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    background-color: rgb(107, 73, 9);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li a:hover,
-nav ul li a:focus {
-    background-color: orange;
-    color: rgb(30, 30, 30);
-    outline: none;
+.main-nav li {
+  margin: 8px 0;
 }
 
+.main-nav a {
+  display: block;
+  background-color: rgb(107, 73, 9);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.main-nav a:hover {
+  background-color: orange;
+  color: #222;
+}
 
 .cta {
   display: inline-flex;
@@ -189,47 +189,21 @@ nav ul li a:focus {
 
 /* mobil */
 @media (max-width: 768px) {
-
-  nav {
+  .main-nav {
     position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
-    margin: 0 auto 20px;
+    left: 0;
+    top: 0;
+    margin-bottom: 20px;
     border-radius: 0;
     display: flex;
     justify-content: center;
-    background-color: rgba(30, 30, 30, 0.98);
   }
 
-  nav ul {
+  .main-nav ul {
     display: flex;
     gap: 8px;
-    justify-content: center;
   }
-
-  nav ul li {
-    margin: 0;
-  }
-
-  nav ul li a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-
-  body {
-    padding-top: 20px;
-  }
-
-  .container {
-    padding-top: 20px;
-  }
-
-  main,
-  article {
-    margin-left: 0;
-  }
-
 }
 
 
