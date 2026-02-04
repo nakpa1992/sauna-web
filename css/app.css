@@ -189,20 +189,30 @@ ol .highlighted {
 
 /* mobil */
 @media (max-width: 768px) {
+
   .main-nav {
-    position: relative;
+    position: static;
     width: 100%;
-    left: 0;
-    top: 0;
-    margin-bottom: 20px;
+    margin: 0;
+    padding: 10px 0;
     border-radius: 0;
-    display: flex;
-    justify-content: center;
+    z-index: 9999;
   }
 
   .main-nav ul {
     display: flex;
-    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .main-nav a {
+    padding: 10px 14px;
+    font-size: 14px;
   }
 }
 
@@ -226,4 +236,14 @@ ol .highlighted {
 
 .hero-header .subtitle {
   opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+
+  .hero,
+  .hero-cenik,
+  .gallery-hero {
+    min-height: auto;
+    padding-top: 40px;
+  }
 }
