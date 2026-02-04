@@ -88,3 +88,12 @@
   font-weight: 400;
   opacity: 0.85;
 }
+
+/* =========================
+   MOBIL
+========================= */
+@media (max-width: 768px) {
+  table.calendar {
+    width: 95%;
+  }
+}
