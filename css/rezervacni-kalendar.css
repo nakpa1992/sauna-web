@@ -227,7 +227,7 @@ button.reserved {
 /* =========================
    MENU
 ========================= */
-nav {
+/* nav {
     position: fixed;
     top: 45px;
     left: 20px;
@@ -266,5 +266,5 @@ nav ul li a:focus {
     background-color: orange;
     color: rgb(30, 30, 30);
     outline: none;
-}
+}//
 
