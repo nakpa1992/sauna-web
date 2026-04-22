@@ -19,7 +19,7 @@ function isSlotInFuture(slot) {
 // TELEGRAM
 // ======================
 function sendTelegramMessage(text) {
-  const token = "8019884991:AAFCLg_I-KvoB6PREqh596eruLgivij59K8";
+  const token = "8019884991:AAFc0eM6xQ1dQbsKfx5evjOZkrFU6E7CXKE";
   const chatId = "6738014483";
 
   fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
